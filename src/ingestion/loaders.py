@@ -5,8 +5,7 @@ from typing import List, Optional
 
 from langchain_community.document_loaders import (
     PyPDFLoader,
-    TextLoader,
-    UnstructuredMarkdownLoader,
+    TextLoader
 )
 from langchain_core.documents import Document
 
@@ -61,7 +60,8 @@ def load_markdown(file_path: Path) -> List[Document]:
         raise DocumentLoaderError(f"File not found: {file_path}")
     
     try:
-        loader = UnstructuredMarkdownLoader(str(file_path))
+        # Use TextLoader for markdown - simpler and no extra dependencies
+        loader = TextLoader(str(file_path))
         documents = loader.load()
         
         for doc in documents:
