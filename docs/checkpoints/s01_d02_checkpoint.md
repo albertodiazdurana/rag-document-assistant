@@ -43,6 +43,15 @@ Integrate ChromaDB vector store and embedding generation.
 
 None requiring formal documentation.
 
+## Deferred to Sprint 2
+
+| Feature | Reason | Sprint 2 Day |
+|---------|--------|--------------|
+| Pinecone (cloud vector DB) | Core path first; abstraction in place | Day 7 or 10 |
+| HuggingFace multilingual-e5-large | German support planned for Day 9 | Day 9 |
+
+The `EmbeddingProvider` enum and `get_embeddings()` factory are ready for additional providers.
+
 ## Cumulative Progress
 
 | Day | Tests | Status |
