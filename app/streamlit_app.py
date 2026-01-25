@@ -178,7 +178,28 @@ with st.sidebar:
                 st.error(f"❌ Failed to clear: {e}")
     
     st.divider()
-    
+
+    # Help & Limitations
+    with st.expander("ℹ️ Tips & Limitations"):
+        st.markdown("""
+**Getting Better Results:**
+- Ask "What do all documents say about X?" for comprehensive answers
+- Ask "Compare sources on X" to see differences
+- Use specific questions for precise answers
+
+**Known Limitations:**
+- Simple queries may only cite one source even if multiple exist
+- No automatic version/date awareness between documents
+- Documents persist until manually cleared
+
+**Memory Management:**
+- Documents remain indexed until you click "Clear All Documents"
+- Chat history is stored in your browser session
+- Refresh the page to clear chat history only
+        """)
+
+    st.divider()
+
     # Footer
     st.caption("Built with FastAPI + LangChain + Streamlit")
 

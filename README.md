@@ -190,6 +190,22 @@ Tracked metrics:
 | **Evaluation** | MLflow |
 | **Testing** | pytest, pytest-cov (84 tests, 73% coverage) |
 
+## Known Limitations
+
+This MVP has the following limitations documented in [EXP-001](docs/experiments/EXP-001_multi-source-detection.md):
+
+| Limitation | Workaround |
+|------------|------------|
+| Simple queries may only cite one source | Ask "What do all documents say about X?" |
+| No automatic version/date awareness | Name files with dates (e.g., `policy_2024.md`) |
+| Documents persist until manually cleared | Use "Clear All Documents" button in UI |
+| Relies on LLM reasoning for conflict detection | Ask explicitly about differences between sources |
+
+**Getting Better Results:**
+- Ask "Compare sources on X" to see differences
+- Ask "Are there different answers for X?" for comprehensive coverage
+- Use specific questions for precise answers
+
 ## Roadmap
 
 ### Sprint 1 (Complete)
@@ -200,8 +216,8 @@ Tracked metrics:
 - [x] FastAPI backend with REST API
 - [x] MLflow evaluation framework
 
-### Sprint 2 (Planned)
-- [ ] Streamlit UI
+### Sprint 2 (In Progress)
+- [x] Streamlit UI
 - [ ] German language support
 - [ ] Pinecone cloud vector database
 - [ ] Hybrid search (BM25 + semantic)
