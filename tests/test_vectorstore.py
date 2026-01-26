@@ -53,6 +53,11 @@ class TestEmbeddingSettings:
         assert settings.openai_api_key == "test-key"
         assert settings.embedding_model == "text-embedding-3-small"
 
+    def test_huggingface_provider(self):
+        settings = EmbeddingSettings(embedding_provider=EmbeddingProvider.HUGGINGFACE)
+        assert settings.embedding_provider == EmbeddingProvider.HUGGINGFACE
+        assert settings.huggingface_model == "intfloat/multilingual-e5-large"
+
 
 # ChromaStore Tests
 class TestChromaStore:

@@ -1,8 +1,9 @@
 """Embedding providers for vector generation."""
 
 from enum import Enum
-from typing import List
+from typing import List, Union
 
+from langchain_core.embeddings import Embeddings
 from langchain_openai import OpenAIEmbeddings
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -10,6 +11,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class EmbeddingProvider(str, Enum):
     """Available embedding providers."""
     OPENAI = "openai"
+    HUGGINGFACE = "huggingface"
 
 
 class EmbeddingSettings(BaseSettings):
@@ -20,9 +22,10 @@ class EmbeddingSettings(BaseSettings):
     openai_api_key: str = ""
     embedding_provider: EmbeddingProvider = EmbeddingProvider.OPENAI
     embedding_model: str = "text-embedding-ada-002"
+    huggingface_model: str = "intfloat/multilingual-e5-large"
 
 
-def get_embeddings(settings: EmbeddingSettings | None = None) -> OpenAIEmbeddings:
+def get_embeddings(settings: EmbeddingSettings | None = None) -> Embeddings:
     """Get configured embedding model.
     
     Args:
@@ -32,10 +35,19 @@ def get_embeddings(settings: EmbeddingSettings | None = None) -> OpenAIEmbedding
         Configured embedding model instance.
         
     Raises:
-        ValueError: If API key not configured.
+        ValueError: If API key not configured (for OpenAI).
     """
     if settings is None:
         settings = EmbeddingSettings()
+    
+    if settings.embedding_provider == EmbeddingProvider.HUGGINGFACE:
+        from langchain_huggingface import HuggingFaceEmbeddings
+        
+        return HuggingFaceEmbeddings(
+            model_name=settings.huggingface_model,
+            model_kwargs={"device": "cpu"},
+            encode_kwargs={"normalize_embeddings": True},
+        )
     
     if settings.embedding_provider == EmbeddingProvider.OPENAI:
         if not settings.openai_api_key:
