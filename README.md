@@ -208,13 +208,13 @@ This project uses **experiment-driven development** to validate features systema
 | EXP-004 | Performance & robustness | Planned | Sprint 3, Day 9 |
 | EXP-005 | End-to-end validation | Planned | Sprint 3, Day 10 |
 
-Each experiment follows the [DSM C.1.3 Capability Experiment Template](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology) with combined quantitative (RAGAS, RAGBench) and qualitative evaluation.
+Each experiment follows the [DSM C.1.3 Capability Experiment Template](https://github.com/albertodiazdurana/take-ai-bite) with combined quantitative (RAGAS, RAGBench) and qualitative evaluation.
 
 **DSM Validation:** This project also validates the DSM methodology itself. Feedback is tracked in [dsm-validation-tracker.md](docs/dsm-validation-tracker.md).
 
 ## Known Limitations
 
-Limitations are tracked per [DSM C.1.5 Limitation Discovery Protocol](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology). Current limitations from [EXP-001](docs/experiments/EXP-001_multi-source-detection.md):
+Limitations are tracked per [DSM C.1.5 Limitation Discovery Protocol](https://github.com/albertodiazdurana/take-ai-bite). Current limitations from [EXP-001](docs/experiments/EXP-001_multi-source-detection.md):
 
 | Limitation | Severity | Disposition | Workaround |
 |------------|----------|-------------|------------|
@@ -246,7 +246,7 @@ Limitations are tracked per [DSM C.1.5 Limitation Discovery Protocol](https://gi
 
 ### Sprint 3: Experiments & Optimization (In Progress)
 
-*Experiment-driven development following [DSM v1.3.1](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology) methodology.*
+*Experiment-driven development following [DSM v1.3.1](https://github.com/albertodiazdurana/take-ai-bite) methodology.*
 
 | Day | Feature | Experiment |
 |-----|---------|------------|
