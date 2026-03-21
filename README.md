@@ -198,7 +198,7 @@ Tracked metrics:
 
 ## Experiments
 
-This project uses **experiment-driven development** to validate features systematically:
+Built using [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite), a framework for human-AI collaboration. Its engine, the Deliberate Systematic Methodology (DSM), provides structured guidance for experiment-driven development to validate features systematically:
 
 | Experiment | Focus | Status | Documentation |
 |------------|-------|--------|---------------|
@@ -263,4 +263,4 @@ MIT License
 
 ## Author
 
-Alberto Díaz-Durana
+Alberto Diaz Durana
