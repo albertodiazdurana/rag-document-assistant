@@ -1,3 +1,5 @@
+**Consumed at:** Session 1 start (2026-03-23)
+
 # Light Session Checkpoint — 2026-03-21
 
 **Branch:** main

@@ -1,3 +1,5 @@
+**Consumed at:** Session 1 start (2026-03-23)
+
 # Sprint 1 - Day 2 Checkpoint: Vector Database & Embeddings
 
 **Date:** 2026-01-18

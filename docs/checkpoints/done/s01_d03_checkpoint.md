@@ -1,3 +1,5 @@
+**Consumed at:** Session 1 start (2026-03-23)
+
 # Sprint 1 - Day 3 Checkpoint: RAG Chain & LLM Integration
 
 **Date:** 2026-01-19

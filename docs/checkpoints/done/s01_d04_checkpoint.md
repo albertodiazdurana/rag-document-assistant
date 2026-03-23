@@ -1,3 +1,5 @@
+**Consumed at:** Session 1 start (2026-03-23)
+
 # Sprint 1 - Day 4 Checkpoint: FastAPI Backend
 
 **Date:** 2026-01-19

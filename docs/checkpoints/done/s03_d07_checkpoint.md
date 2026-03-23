@@ -1,3 +1,5 @@
+**Consumed at:** Session 1 start (2026-03-23)
+
 # Sprint 3 - Day 7 Checkpoint: German Language Support
 
 **Date:** 2026-01-26

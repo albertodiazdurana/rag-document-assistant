@@ -1,3 +1,5 @@
+**Consumed at:** Session 1 start (2026-03-23)
+
 # Sprint 2 - Day 6 Checkpoint: Streamlit UI
 
 **Date:** 2026-01-25

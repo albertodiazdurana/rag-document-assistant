@@ -1,3 +1,5 @@
+**Consumed at:** Session 1 start (2026-03-23)
+
 # Sprint 1 - Day 5 Checkpoint: MLflow Evaluation & Testing
 
 **Date:** 2026-01-22

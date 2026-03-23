@@ -1,3 +1,5 @@
+**Consumed at:** Session 1 start (2026-03-23)
+
 # Sprint 1 - Day 1 Checkpoint: Document Ingestion
 
 **Date:** 2026-01-18
